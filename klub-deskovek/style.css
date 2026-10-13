@@ -1,0 +1,75 @@
+/* Základ celé stránky */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f6;
+  color: #243247;
+  margin: 0;
+  line-height: 1.6;
+}
+header {
+  background-color: #234e70;
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+nav {
+  background-color: white;
+  padding: 12px;
+  text-align: center;
+}
+nav a {
+  margin: 0 10px;
+}
+a {
+  color: #165a91;
+}
+main {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+section, aside {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+figure {
+  margin: 16px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #a9b5c3;
+  padding: 8px;
+  text-align: left;
+}
+label {
+  display: block;
+  margin-top: 12px;
+}
+input, select, textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  font: inherit;
+}
+button {
+  margin-top: 16px;
+  padding: 10px 16px;
+  background-color: #234e70;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+}

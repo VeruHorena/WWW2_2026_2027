@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Klub deskovek</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="nahoru">
+  <h1>Klub deskovek</h1>
+  <p>Hrajeme spolu každý týden.</p>
+</header>
+<nav>
+  <a href="#o-klubu">O klubu</a>
+  <a href="#program">Program</a>
+  <a href="#prihlaska">Přihláška</a>
+</nav>
+<main>
+<section id="o-klubu">
+  <h2>O našem klubu</h2>
+  <p>Máte rádi <strong>deskové hry</strong>?
+     Přijďte si zahrát. <em>Začátečníci jsou vítáni.</em></p>
+  <h3>Co si přinést</h3>
+  <ul>
+    <li>Dobrou náladu</li>
+    <li>Pití</li>
+    <li>Vlastní hru, pokud chcete</li>
+  </ul>
+  <h3>Jak setkání probíhá</h3>
+  <ol>
+    <li>Vybereme hru.</li>
+    <li>Vysvětlíme si pravidla.</li>
+    <li>Zahrajeme si.</li>
+  </ol>
+  <p>Více o hrách najdete na
+    <a href="https://cs.wikipedia.org/wiki/Desková_hra"
+       target="_blank" rel="noopener">Wikipedii</a>.
+  </p>
+<figure>
+  <img src="kostky.svg"
+       alt="Dvě hrací kostky se třemi a pěti tečkami"
+       width="360">
+  <figcaption>Deskové hry nás spojují.</figcaption>
+</figure>
+</section>
+<section id="program">
+  <h2>Program setkání</h2>
+  <table>
+    <caption>Ukázkový plán klubu</caption>
+    <thead>
+      <tr>
+        <th scope="col">Den</th>
+        <th scope="col">Čas</th>
+        <th scope="col">Hra</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Úterý</td><td>14:00</td><td>Dobble</td></tr>
+      <tr><td>Čtvrtek</td><td>14:00</td><td>Šachy</td></tr>
+    </tbody>
+  </table>
+</section>
+<aside>
+  <h2>Tip pro nové hráče</h2>
+  <p>Pravidla vysvětlíme na místě.</p>
+</aside>
+<section id="prihlaska">
+  <h2>Přihláška do klubu</h2>
+  <p>Ukázka formuláře. Údaje se nikam neukládají.</p>
+  <form action="index.html#prihlaska" method="get">
+    <label for="jmeno">Jméno</label>
+    <input id="jmeno" name="jmeno" type="text" required>
+
+    <label for="email">E-mail</label>
+    <input id="email" name="email" type="email" required>
+
+    <label for="hra">Oblíbená hra</label>
+    <select id="hra" name="hra">
+      <option value="dobble">Dobble</option>
+      <option value="sachy">Šachy</option>
+    </select>
+
+    <label for="zprava">Poznámka</label>
+    <textarea id="zprava" name="zprava" rows="3"></textarea>
+
+    <button type="submit">Vyzkoušet odeslání</button>
+  </form>
+</section>
+</main>
+<footer>
+  <p>Ukázkový školní projekt<br>
+     Autor: vaše jméno</p>
+  <a href="#nahoru">Zpět nahoru</a>
+</footer>
+</body>
+</html>
