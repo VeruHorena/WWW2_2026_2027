@@ -1,0 +1,98 @@
+/* 1. ZÁKLAD STRÁNKY */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #0d1120; color: #f1f3fa; font-family: Arial, sans-serif; line-height: 1.65; }
+a { color: inherit; }
+img { display: block; max-width: 100%; height: auto; }
+.obal { width: min(1120px, 92%); margin: 0 auto; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { line-height: 1.15; }
+h1 { font-size: clamp(36px, 4.5vw, 62px); letter-spacing: -2px; margin-bottom: 24px; }
+h2 { font-size: clamp(27px, 3vw, 38px); letter-spacing: -1px; }
+h3 { font-size: 23px; }
+p, li { color: #b9c3d9; }
+.preskocit { position: absolute; left: 16px; top: -100px; padding: 12px; background: #a6e876; color: #101722; z-index: 10; }
+.preskocit:focus { top: 12px; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #56ddce; outline-offset: 4px; }
+/* 2. HLAVIČKA */
+.hlavicka { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 26px 0; border-bottom: 1px solid #293149; }
+.logo { font-weight: 900; font-size: 26px; letter-spacing: -1px; text-decoration: none; }
+.logo span { color: #a6e876; }
+.logo small { display: block; font-size: 9px; letter-spacing: 3px; color: #b9c3d9; }
+nav { display: flex; flex-wrap: wrap; gap: 26px; }
+nav a { text-decoration: none; font-size: 14px; font-weight: bold; }
+nav a:hover { color: #a6e876; }
+/* 3. ÚVOD A TLAČÍTKA */
+.uvod { display: flex; align-items: center; gap: 48px; padding: 66px 0 50px; }
+.uvod > div { flex: 1.3; }
+h1 span { color: #a6e876; }
+.stitek { color: #a6e876; font-size: 11px; letter-spacing: 2px; font-weight: bold; margin-bottom: 14px; }
+.perex { max-width: 570px; font-size: 17px; }
+.akce { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 18px; }
+.tlacitko { display: inline-block; padding: 13px 19px; background: #a6e876; color: #101722; border: 1px solid #a6e876; border-radius: 8px; font: inherit; font-weight: bold; text-decoration: none; cursor: pointer; transition: background .2s, transform .2s; }
+.tlacitko:hover { background: #c3f3a3; transform: translateY(-2px); }
+.vedlejsi { background: transparent; color: #f1f3fa; border-color: #58647e; }
+.vedlejsi:hover { background: #293149; }
+.drobne { font-size: 12px; }
+.hero-obrazek { position: relative; flex: 1; margin: 0; padding: 32px 20px 24px; border: 1px solid #414065; border-radius: 28px; background: radial-gradient(ellipse at 50% 40%, #4d3e79, #1b2139 75%); text-align: center; }
+.hero-obrazek img { width: 100%; }
+.hero-obrazek figcaption { color: #d4dcef; font-size: 12px; }
+.odznak { display: inline-block; color: #a6e876; border: 1px solid #657e66; border-radius: 20px; padding: 5px 12px; font-size: 10px; letter-spacing: 2px; }
+/* 4. VÝHODY A SEKCE */
+.vyhody { display: flex; gap: 30px; border-top: 1px solid #293149; border-bottom: 1px solid #293149; padding: 24px 0; }
+.vyhody p { flex: 1; margin: 0; font-size: 13px; }
+.vyhody strong { display: block; color: #f1f3fa; font-size: 16px; }
+.sekce { padding-top: 65px; scroll-margin-top: 24px; }
+.nadpis-sekce { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 24px; }
+.nadpis-sekce h2 { margin-bottom: 0; }
+.nadpis-sekce > p { font-size: 13px; margin-bottom: 4px; }
+/* 5. PRODUKTY */
+.produkty { display: flex; flex-wrap: wrap; gap: 24px; }
+.produkt { flex: 1 1 250px; min-width: 0; background: #171e31; border: 1px solid #303a53; border-radius: 16px; overflow: hidden; transition: transform .2s; }
+.produkt:hover { transform: translateY(-5px); }
+.produkt-obrazek { background: linear-gradient(130deg, #242b46, #181d30); }
+.produkt-obrazek img { width: 100%; height: 205px; object-fit: contain; }
+.produkt-obsah { padding: 23px; }
+.kategorie { color: #a89cf9; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+.produkt-obsah > p:not(.kategorie) { font-size: 14px; min-height: 70px; }
+.produkt-paticka { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.cena { font-size: 20px; }
+.odkaz { color: #a6e876; text-decoration: none; font-size: 13px; font-weight: bold; }
+.odkaz:hover { text-decoration: underline; }
+/* 6. CENÍK */
+.panel { padding: 36px; border-radius: 20px; background: #1b2439; border: 1px solid #35425e; }
+.tabulka-obal { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin: 20px 0; text-align: left; white-space: nowrap; }
+caption { text-align: left; font-size: 12px; color: #b9c3d9; padding-bottom: 12px; }
+th, td { padding: 16px 12px; border-bottom: 1px solid #35425e; }
+thead { color: #a6e876; background: #111a2c; }
+tbody th { font-weight: normal; }
+/* 7. O NÁS A FORMULÁŘ */
+.o-nas, .kontakt { display: flex; gap: 60px; align-items: start; }
+.o-nas > div, .kontakt > div { flex: 1.2; }
+.tip { flex: 1; padding: 28px; background: #24223c; border-left: 4px solid #a89cf9; border-radius: 12px; }
+form { flex: 1; padding: 28px; background: #171e31; border: 1px solid #303a53; border-radius: 16px; }
+label { display: block; font-size: 13px; font-weight: bold; margin-bottom: 6px; }
+input, select, textarea { width: 100%; padding: 12px; margin-bottom: 18px; border: 1px solid #536079; border-radius: 6px; color: #f1f3fa; background: #0d1120; font: inherit; }
+textarea { resize: vertical; }
+::placeholder { color: #a3aec3; }
+form .tlacitko { width: 100%; font-size: 13px; cursor: default; }
+/* 8. PATIČKA A MOBIL */
+footer { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid #293149; padding: 28px 0; margin-top: 65px !important; font-size: 12px; }
+footer p { margin: 0; }
+@media (max-width: 760px) {
+  .hlavicka, .uvod, .o-nas, .kontakt, .nadpis-sekce { flex-direction: column; align-items: stretch; }
+  .hlavicka { gap: 20px; }
+  nav { gap: 20px; }
+  .uvod { padding-top: 40px; gap: 30px; }
+  .hero-obrazek { max-width: 440px; width: 100%; align-self: center; }
+  .vyhody { flex-direction: column; gap: 18px; }
+  .sekce { padding-top: 44px; }
+  .o-nas, .kontakt { gap: 24px; }
+  .panel, form { padding: 22px; }
+  footer { flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}

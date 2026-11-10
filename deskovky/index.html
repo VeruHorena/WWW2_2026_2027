@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Klub deskovek</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header id="nahoru">
@@ -34,16 +34,45 @@
     </ol>
     <p>Více o naší škole najdete na <a href="https://www.delta-skola.cz" target="_blank" rel="noopener">Škola Delta</a></p>
 <figure>
-    <img src="img/deskovka.png" alt="Deskovka" width="360">
+    <img src="img/deskovka.png" alt="Deskovka">
+    <figcaption>Jak u nás vypadají deskovky</figcaption>
 </figure>
 </section>
 
     <section id="program">
-
+<h2>Plán rozpisu klubu</h2>
+        <table>
+            <thead>
+            <tr><th scope="col">Den</th> <th scope="col">Čas</th> <th scope="col">Hra</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>Pondělí</td> <td>17:00</td> <td>Bingo</td></tr>
+            <tr><td>Středa</td> <td>18:00</td> <td>Pexeso</td></tr>
+            <tr><td>Sobota</td> <td>20:00</td> <td>WoW</td></tr>
+            </tbody>
+        </table>
     </section>
+    <aside class="bublina">
+        <h2>Tip pro nové hráče</h2>
+        <p>Pravidla ti vysvětlíme na místě.</p>
+    </aside>
 
     <section id="prihlaska">
-
+<form action="" method="post">
+    <label for="jmeno">Jméno:</label>
+    <input type="text" id="jmeno" name="jmeno" placeholder="jmeno" required>
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" required>
+    <label for="hra">Oblíbená hra:</label>
+    <select name="hra" id="hra" required>
+        <option value="pexeso">Pexeso</option>
+        <option value="bingo">Bingo</option>
+    </select>
+    <label for="zprava">Poznámka:</label>
+    <textarea name="zprava" id="zprava" rows="3"></textarea>
+    <br>
+    <button type="submit">Odešli</button>
+    </form>
     </section>
 </main>
 
